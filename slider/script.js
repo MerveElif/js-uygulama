@@ -50,16 +50,19 @@ function showSlide(i) {
 
   document.querySelector(".card-link").setAttribute("href", models[index].link);
 }
+
 document.querySelectorAll(".arrow").forEach(function (item) {
   item.addEventListener("mouseenter", function () {
     clearInterval(interval);
   });
 });
+
 document.querySelectorAll(".arrow").forEach(function (item) {
   item.addEventListener("mouseleave", function () {
     init(setings);
   });
 });
+
 function init(setings) {
   var prev;
 
